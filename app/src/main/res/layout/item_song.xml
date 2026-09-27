@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="68dp"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
-    android:padding="8dp"
-    android:background="?android:attr/selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true">
-
-    <ImageView android:id="@+id/thumb" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerCrop" android:background="#1E2330"/>
-    
+    android:layout_width="match_parent" android:layout_height="72dp"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:padding="12dp" android:clickable="true" android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+    <ImageView android:id="@+id/thumb" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop"/>
     <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp">
-        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="13sp" android:maxLines="1" android:ellipsize="end" android:text="Title"/>
-        <TextView android:id="@+id/channel" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#8A8A8A" android:textSize="11sp" android:maxLines="1" android:text="Channel"/>
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="14sp" android:maxLines="1" android:ellipsize="end" android:textStyle="bold"/>
+        <TextView android:id="@+id/channel" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#9CA3AF" android:textSize="12sp" android:maxLines="1"/>
     </LinearLayout>
-
-    <ImageView android:id="@+id/btnAdd" android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_input_add" android:padding="6dp"/>
-    <ImageView android:id="@+id/btnShare" android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_share" android:padding="6dp"/>
+    <ImageView android:id="@+id/btnAdd" android:layout_width="36dp" android:layout_height="36dp" android:background="@drawable/bg_blue" android:src="@android:drawable/ic_input_add" android:padding="8dp"/>
 </LinearLayout>
